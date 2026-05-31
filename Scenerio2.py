@@ -14,8 +14,8 @@ data = [
       (1, "5-Jan", "Shipped"),
       (1, "6-Jan", "Delivered"),
       (2, "1-Jan", "Ordered"),
-      (2, "2-Jan", "dispatched"),
-      (3, "3-Jan", "ship5ped")]
+      (2, "2-Jan", "dispatched4"),
+      (3, "3-Jan", "shipped")]
 myschema = ["orderid","statusdate","status"]
 df = spark.createDataFrame(data,schema=myschema)
 df.show()
